@@ -41,7 +41,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [16, 224]
+    coordinate: [9, 224]
     rotation: 0
     state: enabled
 - name: samp_rate
@@ -587,7 +587,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [184, 72]
+    coordinate: [290, 98]
     rotation: 0
     state: enabled
 
