@@ -71,7 +71,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1058, 544]
+    coordinate: [849, 353]
     rotation: 0
     state: true
 - name: blocks_complex_to_mag_squared_0
@@ -87,9 +87,27 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [645, 547]
+    coordinate: [434, 372]
     rotation: 0
     state: true
+- name: blocks_file_sink_0
+  id: blocks_file_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    append: 'False'
+    comment: ''
+    file: /root/Desktop/sdr/nat-geo/434M_434M_10M_20191204_222016Z_tpms.cfile
+    type: complex
+    unbuffered: 'False'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [553, 56]
+    rotation: 0
+    state: enabled
 - name: blocks_multiply_const_vxx_0
   id: blocks_multiply_const_vxx
   parameters:
@@ -105,7 +123,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1254, 546]
+    coordinate: [1033, 369]
     rotation: 0
     state: true
 - name: blocks_threshold_ff_0
@@ -123,7 +141,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [863, 527]
+    coordinate: [652, 352]
     rotation: 0
     state: true
 - name: blocks_wavfile_sink_0
@@ -140,7 +158,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1391, 627]
+    coordinate: [1236, 456]
     rotation: 0
     state: enabled
 - name: qtgui_time_sink_x_0
@@ -237,7 +255,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1403, 423]
+    coordinate: [1233, 251]
     rotation: 0
     state: true
 - name: qtgui_time_sink_x_0_0
@@ -334,7 +352,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [681, 169]
+    coordinate: [557, 162]
     rotation: 0
     state: disabled
 - name: rtlsdr_source_0
@@ -691,7 +709,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [290, 98]
+    coordinate: [159, 99]
     rotation: 0
     state: enabled
 
@@ -702,6 +720,7 @@ connections:
 - [blocks_multiply_const_vxx_0, '0', qtgui_time_sink_x_0, '0']
 - [blocks_threshold_ff_0, '0', blocks_add_const_vxx_0, '0']
 - [rtlsdr_source_0, '0', blocks_complex_to_mag_squared_0, '0']
+- [rtlsdr_source_0, '0', blocks_file_sink_0, '0']
 - [rtlsdr_source_0, '0', qtgui_time_sink_x_0_0, '0']
 
 metadata:
